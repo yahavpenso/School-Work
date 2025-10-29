@@ -1,0 +1,16 @@
+import java.util.*;
+public class Work2
+   {
+    public static Scanner reader=new 
+    Scanner(System.in);
+    public static void main(String[] args)
+    {
+        double speed;
+        System.out.println("הקש מהירות");
+        speed=reader.nextDouble();
+        if(speed>50)System.out.println("הטלת קנס על פי הכלל 20₪ לכל קמש מעל המהירות המותרת");
+        if(speed<=50) System.out.println("נהג מצטיין");
+        else System.out.println("עליך לשלם קנס בגובה 20₪");
+
+     }
+    }
