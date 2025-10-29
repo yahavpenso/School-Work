@@ -1,0 +1,19 @@
+import java.util.*;
+public class Work1
+   {
+    public static Scanner reader=new 
+    Scanner(System.in);
+    public static void main(String[] args)
+    {
+       double man1, man2, man3, weight;
+       System.out.println("הקש משקל לאדם הראשון");
+       man1=reader.nextDouble();
+       System.out.println("הקש משקל לאדם השני");
+       man2=reader.nextDouble();
+       System.out.println("הקש משקל לאדם השלישי");
+       man3=reader.nextDouble();
+       weight=man1+man2+man3;
+       if(weight<=220) System.out.println("משקל תקין");
+       else System.out.println("עודף משקל");
+     }
+    }
