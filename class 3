@@ -1,18 +1,29 @@
 import java.util.*;  
 
-public class ping2
+public class ping3
 {
     public static Scanner reader=new Scanner(System.in);
     public static void main(String[] args)
     {
-        int sivuv1,sivuv2,sivuv3,count=0;
-        sivuv1=1+(int)(Math.random()*4);
-        sivuv2=1+(int)(Math.random()*4);
-        sivuv3=1+(int)(Math.random()*4);
-        if(sivuv1==3)count=count+1;
-        if(sivuv2==3)count=count+1;
-        if(sivuv3==3)count=count+1;
-        System.out.println("סביבון 1"+sivuv1+"סיבוב 2"+sivuv2+"סיבוב 3"+sivuv3);
-        System.out.println("מספר הפעמים שיצאה המילה היה"+count);
+        int tlat,abs,ahadot,asarot,meot,rev,sign;
+        //הגרלת מיספר תלת סיפרתי
+        tlat=100+(int)(Math.random()*900);
+        // הגרלת המספר התלת ספרתי החיובי או שלילי שהוגרל
+        sign=1+(int)(Math.random()*2);
+        if(sign==1)tlat=tlat*-1;
+        //הדפסת המספר התלת ספרתי החיובי או שלילי שהוגרל
+        System.out.println("tlat="+tlat);
+        //מציאת הערך המוחלט שלו
+        abs=Math.abs(tlat);
+        //פירוק המספר לספרות
+        ahadot=abs%10;
+        asarot=abs/10%10;
+        meot=abs/100;
+        //בניית המיספר ההפוך
+        rev=ahadot*100+asarot*10+meot;
+        System.out.println("rev="+rev);
+        //בדיקה ההפוך הוא פי 2 מהמיספר
+        if(rev==2*abs)System.out.println("special num");
+        else System.out.println("not a special num");
     }  
 }
