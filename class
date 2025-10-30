@@ -1,1 +1,26 @@
 import java.util.*;  
+
+public class ping
+{
+    public static Scanner reader=new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        int arba,sign,ahadot,asarot,meot,alafim,abs,max,min;
+        // הגרלת מיספר ארבע סיפרתי חיובי או שלילי
+        arba=1000+(int)(Math.random()*9000);
+        sign=1+(int)(Math.random()*2);
+        if(sign==1)arba=arba*-1;
+        System.out.println("המספר הארבע ספרתי הוא"+arba);
+        //חישוב ערך המוחלט של המיספר כיד שנפרק אותו למספר
+        abs=Math.abs(arba);
+        ahadot=abs%10;
+        asarot=abs/10%10;
+        meot=abs/100%10;
+        alafim=abs/1000;
+        //מציאת הספרה הגדולה היותר
+        max=Math.max(Math.min(ahadot,asarot),Math.max(meot,alafim));
+        //מציאה הספרה הקטנה ביותר
+        min=Math.min(Math.min(ahadot,asarot),Math.min(meot,alafim));
+        System.out.println("הספר המינימלית:"+min+"הסיפרה המקסימלית"+max);
+    }  
+}
