@@ -1,1 +1,18 @@
 import java.util.*;  
+
+public class ping2
+{
+    public static Scanner reader=new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        int sivuv1,sivuv2,sivuv3,count=0;
+        sivuv1=1+(int)(Math.random()*4);
+        sivuv2=1+(int)(Math.random()*4);
+        sivuv3=1+(int)(Math.random()*4);
+        if(sivuv1==3)count=count+1;
+        if(sivuv2==3)count=count+1;
+        if(sivuv3==3)count=count+1;
+        System.out.println("סביבון 1"+sivuv1+"סיבוב 2"+sivuv2+"סיבוב 3"+sivuv3);
+        System.out.println("מספר הפעמים שיצאה המילה היה"+count);
+    }  
+}
