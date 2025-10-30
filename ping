@@ -1,1 +1,11 @@
-import java.util.*;
+import java.util.*;  
+
+public class ping
+{
+    public static Scanner reader=new Scanner(System.in);
+    public static void main(String[] args)
+    {
+        
+    
+    }  
+}
